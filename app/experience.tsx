@@ -15,43 +15,35 @@ interface ExperienceItem {
 const experiences: ExperienceItem[] = [
   {
     id: 1,
-    company: "Freelance",
-    role: "Full Stack Web Developer",
-    date: "2025 - present",
-    description: "Engineered and deployed custom responsive web applications for multiple clients using modern full-stack frameworks. Led technical discovery sessions to translate business requirements into functional architecture, and implemented end-to-end development practices optimizing performance and scalability across Linux servers.",
-    skills: ["Next.js", "Express.js", "Laravel", "React"],
+    company: "Young Basketball Association (YBA)",
+    role: "Event Staff / Crew Operasional",
+    date: "2023",
+    description: "• Liaison Officer (LO): Melayani kebutuhan informasi pemain dan mengatur alur penonton demi kenyamanan acara.\n• Ticketing: Mengelola penjualan tiket, menangani pembayaran tunai/non-tunai, dan rekapitulasi data harian.\n• Technical Support: Bertanggung jawab atas operasional sound system dan memastikan kelancaran teknis di lapangan.",
+    skills: ["Liaison Officer", "Ticketing", "Technical Support", "Event Operations"],
   },
   {
     id: 2,
-    company: "Litbang IT (HIMSI)",
-    role: "IT & Web Developer",
-    date: "2026 - present",
-    description: "Served as an operator for the CTRL-Z event, ensuring smooth technical execution. Developed a web-based application for the organization using React.",
-    skills: ["React.js", "Technical Operations"],
+    company: "Vzuu",
+    role: "Web Developer — Sistem Kasir & Penjadwalan Klinik Kecantikan",
+    date: "Project",
+    description: "• Mengembangkan sistem kasir dan penjadwalan untuk mendukung efisiensi operasional klinik kecantikan.\n• Menganalisis kebutuhan pengguna dan menerapkannya ke dalam fitur sistem yang sesuai dengan alur bisnis.\n• Melakukan pengujian dan perbaikan sistem untuk memastikan proses transaksi dan pengelolaan jadwal berjalan dengan baik.",
+    skills: ["Web Development", "POS System", "Scheduling", "System Testing"],
   },
   {
     id: 3,
-    company: "MDPTV",
-    role: "Photography, Videography & Web Developer",
-    date: "2024 - present",
-    description: "Operated professional camera equipment for campus broadcasting and media production. Developed a custom web platform for MDPTV using React.js for the frontend, alongside Bun and Prisma ORM for the backend.",
-    skills: ["React.js", "Bun", "Prisma ORM", "Broadcasting"],
+    company: "Fluxo",
+    role: "Web Developer — Content Management System (CMS)",
+    date: "Project",
+    description: "• Mengembangkan CMS untuk mempermudah proses pengelolaan dan pembaruan konten secara lebih terstruktur.\n• Menyesuaikan struktur dan fitur sistem berdasarkan kebutuhan pengguna serta alur pengelolaan informasi.\n• Melakukan evaluasi dan perbaikan fungsi sistem untuk meningkatkan kemudahan penggunaan.",
+    skills: ["Web Development", "CMS", "Content Architecture", "UI/UX"],
   },
   {
     id: 4,
-    company: "Procom (Programming Community)",
-    role: "Member",
-    date: "2024 - 2026",
-    description: "Completed Coaching program covering ReactJS and RESTful APIs, culminating in a Next.js web application as the final project.",
-    skills: ["ReactJS", "RESTful APIs", "Next.js"],
-  },
-  {
-    id: 5,
-    company: "Radio Republik Indonesia",
-    role: "Intern",
-    date: "Feb 2024 - May 2024",
-    description: "Maintained digital broadcasting infrastructure and IT operation systems to ensure uninterrupted media production. Resolved technical hardware and network troubleshooting tasks to minimize system downtime during live broadcasts.",
-    skills: ["IT Operations", "Network Troubleshooting", "Hardware Maintenance"],
+    company: "Hey Blossom",
+    role: "Web Developer — Data Scraping Project",
+    date: "Project",
+    description: "• Mengumpulkan data produk secara sistematis menggunakan teknik web scraping untuk mendukung kebutuhan pengolahan dan analisis data.\n• Membersihkan, menyusun, dan mengelompokkan data agar lebih mudah digunakan dan dianalisis.\n• Melakukan validasi data untuk memastikan informasi yang diperoleh tetap relevan dan terstruktur.",
+    skills: ["Web Scraping", "Data Processing", "Data Cleaning", "Data Validation"],
   },
 ]
 
@@ -95,7 +87,7 @@ export default function Experience() {
                 <h4 className="text-2xl font-bold text-text-primary tracking-tight mb-1 group-hover/item:text-text-primary transition-colors">{exp.role}</h4>
                 <h5 className="text-sm font-bold text-text-secondary tracking-wide uppercase mb-6">{exp.company}</h5>
 
-                <p className="text-base text-text-secondary font-medium leading-relaxed mb-6">{exp.description}</p>
+                <p className="text-base text-text-secondary font-medium leading-relaxed mb-6 whitespace-pre-line">{exp.description}</p>
 
                 <div className="flex flex-wrap gap-2">
                   {exp.skills.map((skill, i) => (
